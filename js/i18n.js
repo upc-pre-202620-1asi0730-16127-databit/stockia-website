@@ -1,9 +1,6 @@
 /* ============================================================
    STOCKIA — i18n (Internationalization)
    Languages: Español (es) | English (en)
-   Mismo patrón que el i18n.js de Qullqa (misma API pública:
-   i18n.t / i18n.setLang / i18n.init / i18n.currentLang), solo con
-   las llaves y textos propios de StockIA / DataBite Corp.
    ============================================================ */
 
 const i18n = (() => {
