@@ -1,7 +1,5 @@
 /* ============================================================
    STOCKIA — main.js  (UI interactions)
-   Mismo comportamiento que el main.js de Qullqa, adaptado a las
-   páginas y secciones propias de StockIA.
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
