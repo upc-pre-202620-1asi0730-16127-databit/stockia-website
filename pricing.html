@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Precios — StockIA</title>
+  <meta name="description" content="Planes de StockIA para un restaurante. Desde funciones básicas hasta predicción con IA y monitoreo IoT completo." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <a class="navbar-logo" href="index.html">
+      <div class="logo-icon"><span>S</span></div>
+      <span class="logo-name brand-font">StockIA</span>
+    </a>
+    <div class="navbar-links">
+      <a href="index.html" data-i18n="nav.home">Inicio</a>
+      <a href="features.html" data-i18n="nav.features">Características</a>
+      <a href="pricing.html" class="active" data-i18n="nav.pricing">Precios</a>
+      <a href="about.html" data-i18n="nav.about">Nosotros</a>
+    </div>
+    <div class="navbar-actions">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="#" class="btn btn-primary btn-sm" data-i18n="nav.demo">Solicitar demo</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════ PAGE HERO ══════════ -->
+<section class="pricing-page-hero">
+  <div class="container">
+    <span class="section-tag" data-i18n="pr.tag">Planes</span>
+    <h1 class="section-title" style="font-size:clamp(1.8rem,4vw,2.4rem);margin-bottom:.75rem;" data-i18n="pr.title">
+      Elige el plan que se adapta a tu restaurante
+    </h1>
+    <p class="section-sub" style="margin:0 auto;" data-i18n="pr.sub">
+      Desde funciones básicas gratuitas hasta predicción con IA y monitoreo IoT completo.
+    </p>
+    <p class="stats-bar-note" style="background:transparent;margin-top:.75rem;" data-i18n="pr.example">Planes de ejemplo — validar precios y features finales con el modelo de negocio del equipo.</p>
+  </div>
+</section>
+
+ <!-- ══════════ PRICING CARDS ══════════ -->
+<section class="pricing-section">
+  <div class="container">
+
+    <!-- Toggle mensual / anual -->
+    <div class="pricing-toggle">
+      <span class="toggle-label" data-i18n="pr.monthly">Mensual</span>
+      <label class="toggle-switch">
+        <input type="checkbox" id="billingToggle" />
+        <span class="toggle-slider"></span>
+      </label>
+      <span class="toggle-label" data-i18n="pr.annual">Anual</span>
+      <span class="toggle-badge" data-i18n="pr.discount">30% descuento</span>
+    </div>
+
+    <div class="price-grid">
+
+      <!-- Plan 1: Esencial -->
+      <div class="price-card">
+        <div class="price-plan" data-i18n="pr.p1.name">Esencial</div>
+        <div class="price-val-wrap">
+          <span class="currency">S/</span>
+          <span class="price-amount"><span id="price-p1">0</span></span>
+          <span style="font-size:13px;color:var(--text-muted);margin-left:4px;"> / mes</span>
+        </div>
+        <div class="price-desc" data-i18n="pr.p1.desc">Para restaurantes que recién empiezan a digitalizar su inventario.</div>
+        <ul class="price-features">
+          <li data-i18n="pr.p1.f1">Hasta 50 insumos</li>
+          <li data-i18n="pr.p1.f2">Registro de ventas básico</li>
+          <li data-i18n="pr.p1.f3">1 usuario</li>
+          <li class="no" data-i18n="pr.p1.f4">Predicción de demanda con IA</li>
+          <li class="no" data-i18n="pr.p1.f5">Sensores IoT</li>
+          <li class="no" data-i18n="pr.p1.f6">Reportes de sostenibilidad</li>
+        </ul>
+      </div>
+
+      <!-- Plan 2: Profesional -->
+      <div class="price-card featured">
+        <div class="price-popular" data-i18n="pr.p2.popular">Más popular</div>
+        <div class="price-plan" data-i18n="pr.p2.name">Profesional</div>
+        <div class="price-val-wrap">
+          <span class="currency">S/</span>
+          <span class="price-amount"><span id="price-p2">39</span></span>
+          <span style="font-size:13px;color:var(--text-muted);margin-left:4px;"> / mes</span>
+        </div>
+        <div class="price-desc" data-i18n="pr.p2.desc">Para un restaurante que quiere anticiparse a su demanda real.</div>
+        <ul class="price-features">
+          <li data-i18n="pr.p2.f1">Insumos ilimitados</li>
+          <li data-i18n="pr.p2.f2">Predicción de demanda con IA</li>
+          <li data-i18n="pr.p2.f3">Hasta 5 usuarios (roles)</li>
+          <li data-i18n="pr.p2.f4">Recomendaciones automáticas de compra</li>
+          <li data-i18n="pr.p2.f5">Reportes de sostenibilidad y gamificación</li>
+          <li class="no" data-i18n="pr.p2.f6">Sensores IoT</li>
+        </ul>
+      </div>
+
+      <!-- Plan 3: IoT Completo -->
+      <div class="price-card">
+        <div class="price-plan" data-i18n="pr.p3.name">IoT Completo</div>
+        <div class="price-val-wrap">
+          <span class="currency">S/</span>
+          <span class="price-amount"><span id="price-p3">79</span></span>
+          <span style="font-size:13px;color:var(--text-muted);margin-left:4px;"> / mes</span>
+        </div>
+        <div class="price-desc" data-i18n="pr.p3.desc">Control total con monitoreo de cocina en tiempo real.</div>
+        <ul class="price-features">
+          <li data-i18n="pr.p3.f1">Todo lo de Profesional</li>
+          <li data-i18n="pr.p3.f2">Sensores IoT (ocupación y electrodomésticos)</li>
+          <li data-i18n="pr.p3.f3">Alertas críticas en tiempo real</li>
+          <li data-i18n="pr.p3.f4">Usuarios ilimitados</li>
+          <li data-i18n="pr.p3.f5">Integración con servicio externo</li>
+          <li data-i18n="pr.p3.f6">Soporte prioritario</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <p class="price-note" data-i18n="pr.note">Sin tarjeta de crédito · Cancela cuando quieras · Precios de ejemplo</p>
+  </div>
+</section>
+
+<!-- ══════════ FAQ ══════════ -->
+<section class="pricing-faq">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-tag" data-i18n="pr.faq.tag">FAQ</span>
+      <h2 class="section-title" data-i18n="pr.faq.title">Preguntas frecuentes</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" data-i18n="pr.faq.q1">¿Puedo cambiar de plan en cualquier momento?</div>
+        <div class="faq-a" data-i18n="pr.faq.a1">Sí. Podrás actualizar o degradar tu plan cuando lo necesites desde la configuración de tu cuenta.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-i18n="pr.faq.q2">¿Qué pasa con mis datos si cancelo?</div>
+        <div class="faq-a" data-i18n="pr.faq.a2">Tus datos se conservarán por un periodo definido tras la cancelación y podrás exportar tu historial en cualquier momento.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" data-i18n="pr.faq.q3">¿El módulo IoT requiere hardware adicional?</div>
+        <div class="faq-a" data-i18n="pr.faq.a3">Sí, requiere sensores compatibles (ocupación y electrodomésticos). El equipo de StockIA ayuda con la instalación inicial.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA BANNER ══════════ -->
+<section class="cta-banner">
+  <div class="container">
+    <h2 class="section-title" data-i18n="cta.title">Empieza a optimizar tu inventario hoy</h2>
+    <p class="section-sub white" data-i18n="cta.sub">Agenda una demo personalizada para tu restaurante. Sin tarjeta de crédito ni compromiso.</p>
+    <div class="cta-banner-btns">
+      <a href="about.html#contacto" class="btn btn-lg" style="background:white;color:var(--primary);border-color:white;" data-i18n="cta.btn1">Solicitar demo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="navbar-logo" href="index.html">
+          <div class="logo-icon"><span>S</span></div>
+          <span class="logo-name brand-font">StockIA</span>
+        </a>
+        <p class="footer-tagline" data-i18n="ft.tagline">Inventario inteligente para restaurantes que no dejan nada al azar.</p>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="ft.product">Producto</div>
+        <div class="footer-links-list">
+          <a href="features.html" data-i18n="nav.features">Características</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Precios</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="ft.company">Empresa</div>
+        <div class="footer-links-list">
+          <a href="about.html" data-i18n="nav.about">Nosotros</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="ft.legal">Legal</div>
+        <div class="footer-links-list">
+          <a href="#" data-i18n="ft.terms">Términos</a>
+          <a href="#" data-i18n="ft.privacy">Privacidad</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy" data-i18n="ft.copy">© 2026 DataBite Corp · Perú</span>
+      <div class="footer-legal">
+        <a href="#" data-i18n="ft.terms">Términos</a>
+        <a href="#" data-i18n="ft.privacy">Privacidad</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

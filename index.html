@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StockIA — Inventario Inteligente para Restaurantes</title>
+  <meta name="description" content="StockIA predice la demanda de tu restaurante con Inteligencia Artificial, controla tu inventario en tiempo real y monitorea tu cocina con sensores IoT." />
+  <meta name="keywords" content="gestión de inventario, restaurantes, inteligencia artificial, machine learning, IoT, predicción de demanda, DataBite, StockIA, Perú" />
+  <meta name="author" content="DataBite Corp" />
+  <meta name="copyright" content="Copyright DataBite Corp 2026" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ══════════ NAVBAR ══════════ -->
+<nav class="navbar">
+  <div class="navbar-container">
+    <a class="navbar-logo" href="index.html">
+      <!-- PENDIENTE: reemplazar por <img src="assets/img/logo.png" ...> cuando exista el logo final -->
+      <div class="logo-icon"><span>S</span></div>
+      <span class="logo-name brand-font">StockIA</span>
+    </a>
+    <div class="navbar-links">
+      <a href="index.html" data-i18n="nav.home">Inicio</a>
+      <a href="features.html" data-i18n="nav.features">Características</a>
+      <a href="pricing.html" data-i18n="nav.pricing">Precios</a>
+      <a href="about.html" data-i18n="nav.about">Nosotros</a>
+    </div>
+    <div class="navbar-actions">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <a href="#" class="btn btn-primary btn-sm" data-i18n="nav.demo">Solicitar demo</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════ HERO ══════════ -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="pill">
+          <span class="pill-dot"></span>
+          <span data-i18n="hero.badge">DataBite Corp · Inventario impulsado por IA</span>
+        </div>
+        <h1 class="hero-title">
+          <span data-i18n="hero.title.line1">Predicción de demanda e inventario inteligente para tu</span><br>
+          <em class="highlight" data-i18n="hero.title.highlight">restaurante</em>
+        </h1>
+        <p class="hero-desc" data-i18n="hero.desc">
+          StockIA aprende de tus ventas históricas, el clima y la afluencia de comensales para decirte qué preparar, cuánto comprar y cuándo actuar — con sensores IoT que cuidan tu cocina las 24 horas.
+        </p>
+        <div class="hero-btns">
+          <a href="#cta" class="btn btn-accent btn-lg" data-i18n="hero.cta.primary">Optimiza tu inventario →</a>
+          <a href="features.html" class="btn btn-outline btn-lg" data-i18n="hero.cta.secondary">Ver cómo funciona</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <div class="stat-val" data-i18n="hero.stat1.val">−25%</div>
+            <div class="stat-lbl" data-i18n="hero.stat1.lbl">Desperdicio de alimentos*</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-val" data-i18n="hero.stat2.val">+18%</div>
+            <div class="stat-lbl" data-i18n="hero.stat2.lbl">Margen operativo estimado*</div>
+          </div>
+          <div class="hero-stat">
+            <div class="stat-val" data-i18n="hero.stat3.val">&lt;5s</div>
+            <div class="stat-lbl" data-i18n="hero.stat3.lbl">Descuento de insumos por venta</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dashboard Mockup (contenido ilustrativo, no traducido, igual que en Qullqa) -->
+      <div class="hero-visual">
+        <div class="hv-topbar">
+          <div class="hv-dot" style="background:#EF4444;"></div>
+          <div class="hv-dot" style="background:#FACC15;"></div>
+          <div class="hv-dot" style="background:#22C55E;"></div>
+          <span class="hv-title">Dashboard · StockIA</span>
+        </div>
+        <div class="hv-body">
+          <div class="hv-label">Dashboard — Resumen general</div>
+          <div class="hv-cards">
+            <div class="hv-card">
+              <div class="hv-card-lbl">Insumos</div>
+              <div class="hv-card-val">342</div>
+            </div>
+            <div class="hv-card">
+              <div class="hv-card-lbl">Stock Bajo</div>
+              <div class="hv-card-val warn">9</div>
+            </div>
+            <div class="hv-card">
+              <div class="hv-card-lbl">Por Vencer</div>
+              <div class="hv-card-val danger">4</div>
+            </div>
+            <div class="hv-card">
+              <div class="hv-card-lbl">Ahorro Sem.</div>
+              <div class="hv-card-val green">S/2.3k</div>
+            </div>
+          </div>
+          <div class="hv-chart-lbl">Demanda proyectada (IA) — próximos 7 días</div>
+          <div class="hv-bars">
+            <div class="hv-bar" style="height:58%"></div>
+            <div class="hv-bar" style="height:64%"></div>
+            <div class="hv-bar" style="height:52%"></div>
+            <div class="hv-bar" style="height:70%"></div>
+            <div class="hv-bar" style="height:100%"></div>
+            <div class="hv-bar" style="height:95%"></div>
+            <div class="hv-bar" style="height:80%"></div>
+          </div>
+          <div class="hv-days">
+            <span>Lun</span><span>Mar</span><span>Mié</span>
+            <span>Jue</span><span>Vie</span><span>Sáb</span><span>Dom</span>
+          </div>
+          <div class="hv-alert">
+            <span style="font-size:14px;">🔴</span>
+            <span class="hv-alert-text">Refrigerador — puerta abierta 6 min</span>
+            <span class="hv-alert-badge">crítica</span>
+          </div>
+          <div class="hv-alert-warn">
+            <span style="font-size:14px;">🟡</span>
+            <span class="hv-alert-text">Masa de pizza — preparar +30% (viernes)</span>
+            <span class="hv-alert-badge">IA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ STATS BAR ══════════ -->
+<div class="stats-bar">
+  <div class="container">
+    <div class="stats-bar-inner">
+      <div class="stats-bar-item">
+        <div class="stats-bar-val" data-i18n="stats.s1.val">30%*</div>
+        <div class="stats-bar-lbl" data-i18n="stats.s1.lbl">de insumos comprados se desperdicia</div>
+      </div>
+      <div class="stats-bar-item">
+        <div class="stats-bar-val" data-i18n="stats.s2.val">1 de 3*</div>
+        <div class="stats-bar-lbl" data-i18n="stats.s2.lbl">restaurantes sin sistema predictivo</div>
+      </div>
+      <div class="stats-bar-item">
+        <div class="stats-bar-val" data-i18n="stats.s3.val">−20%*</div>
+        <div class="stats-bar-lbl" data-i18n="stats.s3.lbl">de pérdidas evitables con IA</div>
+      </div>
+      <div class="stats-bar-item">
+        <div class="stats-bar-val" data-i18n="stats.s4.val">24/7</div>
+        <div class="stats-bar-lbl" data-i18n="stats.s4.lbl">monitoreo IoT de cocina y almacén</div>
+      </div>
+    </div>
+  </div>
+</div>
+<p class="stats-bar-note" data-i18n="stats.note">* Cifras referenciales de ejemplo — reemplazar con datos reales una vez validados con el estudio de mercado.</p>
+
+<!-- ══════════ SEGMENTS ══════════ -->
+<div class="segments">
+  <div class="container">
+    <p class="segments-label" data-i18n="seg.label">¿Para quién es StockIA?</p>
+    <div class="segments-grid">
+      <div class="seg-card">
+        <div class="seg-icon">🍽️</div>
+        <div>
+          <div class="seg-name" data-i18n="seg.owner.name">Dueños y CEOs de restaurante</div>
+          <div class="seg-desc" data-i18n="seg.owner.desc">Visualiza el estado real de tu negocio: inventario, mermas y rentabilidad en un solo dashboard ejecutivo, sin depender de reportes manuales.</div>
+        </div>
+      </div>
+      <div class="seg-card">
+        <div class="seg-icon">👨‍🍳</div>
+        <div>
+          <div class="seg-name" data-i18n="seg.manager.name">Administradores y jefes de cocina</div>
+          <div class="seg-desc" data-i18n="seg.manager.desc">Controla el día a día: recetas, stock de insumos, alertas de vencimiento y tareas del equipo, todo en un solo lugar.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ FEATURES ══════════ -->
+<section class="features-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="feat.tag">Funcionalidades</span>
+      <h2 class="section-title" data-i18n="feat.title">Todo lo que necesita tu restaurante</h2>
+      <p class="section-sub" data-i18n="feat.subtitle">Funcionalidades pensadas para reducir el desperdicio, anticipar la demanda y dar visibilidad total sobre tu operación diaria.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feat-card">
+        <div class="feat-icon-wrap blue">📦</div>
+        <div class="feat-name" data-i18n="feat.f1.name">Inventario Inteligente</div>
+        <div class="feat-desc" data-i18n="feat.f1.desc">Controla el stock en tiempo real, agrega o edita insumos y descuenta automáticamente los ingredientes de cada receta vendida.</div>
+        <span class="feat-tag" data-i18n="feat.f1.tag">Gestión de stock</span>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap navy">📈</div>
+        <div class="feat-name" data-i18n="feat.f2.name">Predicción de Demanda con IA</div>
+        <div class="feat-desc" data-i18n="feat.f2.desc">Modelos de Machine Learning que aprenden de tus ventas y patrones de asistencia. Ej.: "Los viernes aumenta la demanda de pizza en 30%, prepara más masa desde la mañana".</div>
+        <span class="feat-tag" data-i18n="feat.f2.tag">Machine Learning</span>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap green">🛒</div>
+        <div class="feat-name" data-i18n="feat.f3.name">Recomendaciones Automáticas</div>
+        <div class="feat-desc" data-i18n="feat.f3.desc">Alertas de compra de insumos antes de que falten y sugerencias de menú según popularidad y estacionalidad.</div>
+        <span class="feat-tag" data-i18n="feat.f3.tag">Compras inteligentes</span>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap yellow">📡</div>
+        <div class="feat-name" data-i18n="feat.f4.name">Monitoreo IoT de Cocina</div>
+        <div class="feat-desc" data-i18n="feat.f4.desc">Sensores de ocupación y electrodomésticos que detectan puertas de refrigerador abiertas, posibles fallas de equipos y flujo de clientes en tiempo real.</div>
+        <span class="feat-tag" data-i18n="feat.f4.tag">Hardware conectado</span>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap red">🔐</div>
+        <div class="feat-name" data-i18n="feat.f5.name">Roles y Permisos</div>
+        <div class="feat-desc" data-i18n="feat.f5.desc">Configura roles para dueño, administrador, cocina y caja, con accesos distintos según la responsabilidad de cada persona en tu restaurante.</div>
+        <span class="feat-tag" data-i18n="feat.f5.tag">Control de equipo</span>
+      </div>
+      <div class="feat-card">
+        <div class="feat-icon-wrap cream">🌱</div>
+        <div class="feat-name" data-i18n="feat.f6.name">Sostenibilidad y Gamificación</div>
+        <div class="feat-desc" data-i18n="feat.f6.desc">Métricas de reducción de desperdicio y logros para tu equipo: "Redujeron el desperdicio un 20% este mes".</div>
+        <span class="feat-tag" data-i18n="feat.f6.tag">Impacto medible</span>
+      </div>
+    </div>
+    <div style="text-align:center; margin-top:2.5rem;">
+      <a href="features.html" class="btn btn-outline" data-i18n="feat.viewall">Ver todas las características →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ DIFERENCIADORES ══════════ -->
+<section class="diff-section">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-tag white" data-i18n="diff.tag">Diferenciadores</span>
+      <h2 class="section-title white" data-i18n="diff.title">Más que un inventario</h2>
+      <p class="section-sub white" style="margin-inline:auto;" data-i18n="diff.subtitle">StockIA va más allá del control de stock: convierte los datos de tu restaurante en decisiones y en resultados visibles para tu equipo.</p>
+    </div>
+    <div class="diff-grid">
+      <div class="diff-card">
+        <div class="diff-icon">🏆</div>
+        <div class="diff-title" data-i18n="diff.d1.title">Gamificación</div>
+        <div class="diff-text" data-i18n="diff.d1.text">Logros y reconocimientos para tu equipo cuando reducen el desperdicio o mejoran la rotación de inventario.</div>
+      </div>
+      <div class="diff-card">
+        <div class="diff-icon">🌱</div>
+        <div class="diff-title" data-i18n="diff.d2.title">Sostenibilidad</div>
+        <div class="diff-text" data-i18n="diff.d2.text">Métricas de impacto ambiental que muestran cuánta comida se dejó de desperdiciar mes a mes.</div>
+      </div>
+      <div class="diff-card">
+        <div class="diff-icon">🧠</div>
+        <div class="diff-title" data-i18n="diff.d3.title">Aprende de tu restaurante</div>
+        <div class="diff-text" data-i18n="diff.d3.text">La IA se entrena con los datos propios de tu negocio — tus platos, tus clientes y tu estacionalidad — no con promedios genéricos de la industria.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ INTEGRACIONES ══════════ -->
+<section class="integrations-section">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-tag accent" data-i18n="integ.tag">Integraciones</span>
+      <h2 class="section-title" data-i18n="integ.title">Se conecta con el ecosistema que ya usas</h2>
+      <p class="section-sub" style="margin-inline:auto;" data-i18n="integ.subtitle">Como parte de la arquitectura de StockIA se evalúa la integración con un servicio externo. Estas son las opciones en evaluación por el equipo (pendiente de decisión final).</p>
+    </div>
+    <div class="integrations-grid">
+      <div class="integration-card">
+        <div class="integration-logo">🗺️</div>
+        <div class="integration-name" data-i18n="integ.i1.name">Google Maps API</div>
+        <div class="integration-desc" data-i18n="integ.i1.desc">Ubicación del restaurante y análisis de flujo de clientes por zona.</div>
+        <span class="integration-status" data-i18n="integ.status">En evaluación</span>
+      </div>
+      <div class="integration-card">
+        <div class="integration-logo">⛅</div>
+        <div class="integration-name" data-i18n="integ.i2.name">OpenWeather API</div>
+        <div class="integration-desc" data-i18n="integ.i2.desc">Correlaciona el clima con la demanda, ej. más sopas en días fríos.</div>
+        <span class="integration-status" data-i18n="integ.status">En evaluación</span>
+      </div>
+      <div class="integration-card">
+        <div class="integration-logo">💳</div>
+        <div class="integration-name" data-i18n="integ.i3.name">Stripe / PayPal</div>
+        <div class="integration-desc" data-i18n="integ.i3.desc">Pagos y suscripciones para el acceso al software StockIA.</div>
+        <span class="integration-status" data-i18n="integ.status">En evaluación</span>
+      </div>
+      <div class="integration-card">
+        <div class="integration-logo">✉️</div>
+        <div class="integration-name" data-i18n="integ.i4.name">Twilio / SendGrid</div>
+        <div class="integration-desc" data-i18n="integ.i4.desc">Alertas críticas de inventario e IoT por SMS o correo electrónico.</div>
+        <span class="integration-status" data-i18n="integ.status">En evaluación</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PORTFOLIO ══════════ -->
+<section class="portfolio-section">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag" data-i18n="port.tag">Portafolio</span>
+      <h2 class="section-title" data-i18n="port.title">La plataforma en acción</h2>
+      <p class="section-sub" data-i18n="port.subtitle">Vistas de referencia de la futura Web Application de StockIA — dashboard, predicciones, recetas y alertas.</p>
+    </div>
+    <div class="port-tabs">
+      <button class="port-tab active" data-i18n="port.tab1">Todas las vistas</button>
+      <button class="port-tab" data-i18n="port.tab2">Inventario</button>
+      <button class="port-tab" data-i18n="port.tab3">IA &amp; IoT</button>
+    </div>
+    <div class="port-grid">
+      <div class="port-item">
+        <div class="port-screen">
+          <div class="port-mini-bar">
+            <div class="port-mini-dot"></div><div class="port-mini-dot"></div><div class="port-mini-dot"></div>
+          </div>
+          <div class="port-mini-body">
+            <div class="port-mini-title">Dashboard Ejecutivo</div>
+            <div class="port-mini-row">
+              <div class="port-mini-cell filled"></div>
+              <div class="port-mini-cell green"></div>
+              <div class="port-mini-cell warn"></div>
+              <div class="port-mini-cell red"></div>
+            </div>
+            <div style="display:flex;align-items:flex-end;gap:3px;height:28px;margin-top:6px;">
+              <div style="flex:1;background:var(--primary);border-radius:2px 2px 0 0;height:50%;opacity:.6;"></div>
+              <div style="flex:1;background:var(--primary);border-radius:2px 2px 0 0;height:75%;opacity:.6;"></div>
+              <div style="flex:1;background:var(--primary);border-radius:2px 2px 0 0;height:60%;opacity:.6;"></div>
+              <div style="flex:1;background:var(--primary);border-radius:2px 2px 0 0;height:90%;opacity:.6;"></div>
+              <div style="flex:1;background:var(--primary);border-radius:2px 2px 0 0;height:100%;opacity:.6;"></div>
+            </div>
+          </div>
+        </div>
+        <div class="port-info">
+          <div class="port-info-name" data-i18n="port.p1.name">Dashboard principal</div>
+          <div class="port-info-desc" data-i18n="port.p1.desc">Resumen visual de inventario, predicciones y alertas</div>
+        </div>
+      </div>
+      <div class="port-item">
+        <div class="port-screen">
+          <div class="port-mini-bar">
+            <div class="port-mini-dot"></div><div class="port-mini-dot"></div>
+          </div>
+          <div class="port-mini-body">
+            <div class="port-mini-title">Predicción de Demanda</div>
+            <div style="display:flex;flex-direction:column;gap:4px;">
+              <div style="display:flex;justify-content:space-between;padding:3px 5px;background:var(--gray-100);border-radius:3px;">
+                <span style="font-size:8px;">Pizza Margarita (vie.)</span>
+                <span style="font-size:8px;color:#166534;font-weight:700;">+30%</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:3px 5px;background:var(--gray-100);border-radius:3px;">
+                <span style="font-size:8px;">Ensaladas (feriado)</span>
+                <span style="font-size:8px;color:var(--danger);font-weight:700;">−12%</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:3px 5px;background:var(--gray-100);border-radius:3px;">
+                <span style="font-size:8px;">Sopas (clima frío)</span>
+                <span style="font-size:8px;color:#166534;font-weight:700;">+22%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="port-info">
+          <div class="port-info-name" data-i18n="port.p2.name">Predicción de Demanda</div>
+          <div class="port-info-desc" data-i18n="port.p2.desc">Proyección semanal por plato según historial, clima y estacionalidad</div>
+        </div>
+      </div>
+      <div class="port-item">
+        <div class="port-screen">
+          <div class="port-mini-bar">
+            <div class="port-mini-dot"></div><div class="port-mini-dot"></div>
+          </div>
+          <div class="port-mini-body">
+            <div class="port-mini-title">Recetas del Menú</div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+              <div style="padding:5px;background:var(--gray-100);border-radius:3px;">
+                <div style="font-size:8px;font-weight:700;color:var(--primary);">Pizza Margarita</div>
+                <div style="font-size:7px;color:var(--text-muted);">4 insumos vinculados</div>
+              </div>
+              <div style="padding:5px;background:var(--gray-100);border-radius:3px;">
+                <div style="font-size:8px;font-weight:700;color:var(--primary);">Lomo Saltado</div>
+                <div style="font-size:7px;color:var(--text-muted);">6 insumos vinculados</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="port-info">
+          <div class="port-info-name" data-i18n="port.p3.name">Recetas y Descuento Automático</div>
+          <div class="port-info-desc" data-i18n="port.p3.desc">Vincula cada plato del menú con sus insumos para descontar stock al vender</div>
+        </div>
+      </div>
+      <div class="port-item">
+        <div class="port-screen">
+          <div class="port-mini-bar">
+            <div class="port-mini-dot"></div><div class="port-mini-dot"></div>
+          </div>
+          <div class="port-mini-body">
+            <div class="port-mini-title">Alertas IoT</div>
+            <div style="display:flex;flex-direction:column;gap:4px;">
+              <div style="display:flex;justify-content:space-between;padding:3px 5px;background:var(--danger-light);border-radius:3px;">
+                <span style="font-size:8px;color:#991B1B;">Horno — consumo anómalo</span>
+                <span style="font-size:7px;font-weight:700;background:var(--danger);color:white;padding:1px 4px;border-radius:2px;">alta</span>
+              </div>
+              <div style="display:flex;justify-content:space-between;padding:3px 5px;background:var(--warning-light);border-radius:3px;">
+                <span style="font-size:8px;color:#92400E;">Refrigerador — puerta abierta</span>
+                <span style="font-size:7px;font-weight:700;background:#D97706;color:white;padding:1px 4px;border-radius:2px;">media</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="port-info">
+          <div class="port-info-name" data-i18n="port.p4.name">Sistema de Alertas IoT</div>
+          <div class="port-info-desc" data-i18n="port.p4.desc">Notificaciones de ocupación, fallas de equipos y consumo energético</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ VIDEO ABOUT THE PRODUCT ══════════ -->
+<section class="video-section">
+  <div class="container">
+    <div class="section-header center">
+      <span class="section-tag" data-i18n="vid.tag">Producto</span>
+      <h2 class="section-title" data-i18n="vid.title">Mira StockIA en acción</h2>
+      <p class="section-sub" style="margin-inline:auto;" data-i18n="vid.sub">Descubre cómo StockIA transforma la gestión de inventario en tu restaurante.</p>
+    </div>
+    <!--
+      PENDIENTE: cuando exista el video "About the Product", reemplazar el bloque
+      .video-placeholder de abajo por:
+      <div class="video-wrapper">
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="StockIA — About the Product"
+          frameborder="0" allowfullscreen></iframe>
+      </div>
+    -->
+    <div class="video-placeholder">
+      <div class="video-placeholder-icon">▶</div>
+      <div class="video-placeholder-title" data-i18n="vid.ph.title">Video demostrativo próximamente</div>
+      <div class="video-placeholder-text" data-i18n="vid.ph.text">Aquí se incrustará el video "About the Product" de StockIA una vez grabado y publicado.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ CTA BANNER ══════════ -->
+<section class="cta-banner" id="cta">
+  <div class="container">
+    <h2 class="section-title" data-i18n="cta.title">Empieza a optimizar tu inventario hoy</h2>
+    <p class="section-sub white" data-i18n="cta.sub">Agenda una demo personalizada para tu restaurante. Sin tarjeta de crédito ni compromiso.</p>
+    <div class="cta-banner-btns">
+      <a href="about.html#contacto" class="btn btn-lg" style="background:white;color:var(--primary);border-color:white;" data-i18n="cta.btn1">Solicitar demo</a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="navbar-logo" href="index.html">
+          <div class="logo-icon"><span>S</span></div>
+          <span class="logo-name brand-font">StockIA</span>
+        </a>
+        <p class="footer-tagline" data-i18n="ft.tagline">Inventario inteligente para restaurantes que no dejan nada al azar.</p>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="ft.product">Producto</div>
+        <div class="footer-links-list">
+          <a href="features.html" data-i18n="nav.features">Características</a>
+          <a href="pricing.html" data-i18n="nav.pricing">Precios</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="ft.company">Empresa</div>
+        <div class="footer-links-list">
+          <a href="about.html" data-i18n="nav.about">Nosotros</a>
+        </div>
+      </div>
+      <div>
+        <div class="footer-col-title" data-i18n="ft.legal">Legal</div>
+        <div class="footer-links-list">
+          <a href="#" data-i18n="ft.terms">Términos</a>
+          <a href="#" data-i18n="ft.privacy">Privacidad</a>
+          <a href="#" data-i18n="ft.support">Soporte</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy" data-i18n="ft.copy">© 2026 DataBite Corp · Perú</span>
+      <div class="footer-legal">
+        <a href="#" data-i18n="ft.terms">Términos</a>
+        <a href="#" data-i18n="ft.privacy">Privacidad</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
