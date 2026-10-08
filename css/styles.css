@@ -14,13 +14,7 @@ a { text-decoration: none; }
 button { font-family: inherit; cursor: pointer; }
 ul { list-style: none; }
 
-/* 3. CSS VARIABLES — STOCKIA PALETTE ------------------------
-   NOTA: paleta provisional (placeholder) pensada para un producto
-   de inventario inteligente + IA para restaurantes. Reemplazar los
-   valores hexadecimales cuando el equipo defina el brandbook final.
-   Se mantienen los NOMBRES de variable usados en el proyecto Qullqa
-   (--bg-blue, --primary, etc.) por compatibilidad de los componentes,
-   aunque el valor apunte ahora a un tono distinto de la paleta. */
+/* 3. CSS VARIABLES — STOCKIA PALETTE ----------------------- */
 :root {
   /* Primary — Verde bosque profundo (tecnología + sostenibilidad) */
   --primary:        #16332B;
@@ -775,6 +769,7 @@ section { padding: var(--section-y) 0; }
   width: 60px; height: 60px;
   border-radius: 50%;
   background: var(--primary-alpha);
+  object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;
