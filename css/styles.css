@@ -143,6 +143,10 @@ section { padding: var(--section-y) 0; }
   font-weight: 800;
   font-size: 17px;
 }
+
+.logo-img 
+{ height: 38px; width: auto; display: block; }
+
 .logo-name {
   font-family: 'Orbitron', sans-serif;
   font-size: 16px;
