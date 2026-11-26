@@ -1075,6 +1075,7 @@ section { padding: var(--section-y) 0; }
   .form-row { grid-template-columns: 1fr; }
 }
 @media (max-width: 480px) {
+  .navbar-demo { display: none; }
   .features-grid { grid-template-columns: 1fr; }
   .integrations-grid { grid-template-columns: 1fr; }
   .how-steps { grid-template-columns: 1fr; }
