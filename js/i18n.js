@@ -116,9 +116,9 @@ const i18n = (() => {
 
       /* ── CTA Banner (todas las páginas) ── */
       'cta.title': 'Empieza a optimizar tu inventario hoy',
-      'cta.sub':   'Agenda una demo personalizada para tu restaurante. Sin tarjeta de crédito ni compromiso.',
+	    'cta.sub': 'Crea tu cuenta gratis en la Web App o agenda una demo personalizada para tu restaurante.',
       'cta.btn1':  'Solicitar demo',
-      'cta.btn2':  'Optimiza tu inventario →',
+      'cta.btn2': 'Crear cuenta gratis →',
 
       /* ── Features page ── */
       'fp.tag':   'Características',
@@ -162,7 +162,7 @@ const i18n = (() => {
       'pr.annual':   'Anual',
       'pr.discount': '30% descuento',
       'pr.example':  'Planes de ejemplo — validar precios y features finales con el modelo de negocio del equipo.',
-      'pr.note':     'Sin tarjeta de crédito · Cancela cuando quieras · Precios de ejemplo',
+      'pr.note': 'El plan Esencial no pide tarjeta · Paga los planes de pago con Stripe o PayPal desde la Web App · Cancela cuando quieras',
       'pr.p1.name': 'Esencial',
       'pr.p1.desc': 'Para restaurantes que recién empiezan a digitalizar su inventario.',
       'pr.p1.f1': 'Hasta 50 insumos',
@@ -371,10 +371,9 @@ const i18n = (() => {
 
       /* ── CTA Banner (all pages) ── */
       'cta.title': 'Start optimizing your inventory today',
-      'cta.sub':   'Book a personalized demo for your restaurant. No credit card, no commitment.',
+      'cta.sub': 'Create your free account in the Web App or book a personalized demo for your restaurant.',
       'cta.btn1':  'Request demo',
-      'cta.btn2':  'Optimize your inventory →',
-
+      'cta.btn2': 'Create a free account →',
       /* ── Features page ── */
       'fp.tag':   'Features',
       'fp.title': 'Everything you need, in one place',
@@ -417,7 +416,7 @@ const i18n = (() => {
       'pr.annual':   'Annual',
       'pr.discount': '30% off',
       'pr.example':  'Example plans — validate final pricing and features with the team\'s business model.',
-      'pr.note':     'No credit card required · Cancel anytime · Example pricing',
+      'pr.note': 'The Essential plan needs no card · Pay for the paid plans with Stripe or PayPal in the Web App · Cancel anytime',
       'pr.p1.name': 'Essential',
       'pr.p1.desc': 'For restaurants just starting to digitize their inventory.',
       'pr.p1.f1': 'Up to 50 ingredients',
@@ -516,10 +515,10 @@ const i18n = (() => {
     }
   };
 
-  let currentLang = localStorage.getItem('stockia-lang') || 'es';
+  let currentLang = localStorage.getItem('stockia-lang') || 'en';
 
   function t(key) {
-    return translations[currentLang][key] || translations['es'][key] || key;
+    return translations[currentLang][key] || translations['en'][key] || key;
   }
 
   function applyTranslations() {
