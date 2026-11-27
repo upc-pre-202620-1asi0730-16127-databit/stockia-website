@@ -6,6 +6,7 @@
   <title>Precios — StockIA</title>
   <meta name="description" content="Planes de StockIA para un restaurante. Desde funciones básicas hasta predicción con IA y monitoreo IoT completo." />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
 </head>
 <body>
 
@@ -13,8 +14,7 @@
 <nav class="navbar">
   <div class="navbar-container">
     <a class="navbar-logo" href="index.html">
-      <div class="logo-icon"><span>S</span></div>
-      <span class="logo-name brand-font">StockIA</span>
+<img src="assets/img/logo.png" alt="StockIA" class="logo-img" />
     </a>
     <div class="navbar-links">
       <a href="index.html" data-i18n="nav.home">Inicio</a>
@@ -27,8 +27,8 @@
         <button class="lang-btn active" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a href="#" class="btn btn-primary btn-sm" data-i18n="nav.demo">Solicitar demo</a>
-    </div>
+<a href="https://webapp-stockia.vercel.app/auth/sign-in" class="btn btn-outline btn-sm" data-i18n="login.tag">Iniciar sesión</a>
+<a href="about.html#contacto" class="btn btn-primary btn-sm navbar-demo" data-i18n="nav.demo">Solicitar demo</a>    </div>
   </div>
 </nav>
 
@@ -42,7 +42,6 @@
     <p class="section-sub" style="margin:0 auto;" data-i18n="pr.sub">
       Desde funciones básicas gratuitas hasta predicción con IA y monitoreo IoT completo.
     </p>
-    <p class="stats-bar-note" style="background:transparent;margin-top:.75rem;" data-i18n="pr.example">Planes de ejemplo — validar precios y features finales con el modelo de negocio del equipo.</p>
   </div>
 </section>
 
@@ -80,6 +79,7 @@
           <li class="no" data-i18n="pr.p1.f5">Sensores IoT</li>
           <li class="no" data-i18n="pr.p1.f6">Reportes de sostenibilidad</li>
         </ul>
+        <a href="https://webapp-stockia.vercel.app/auth/sign-up?plan=esencial" class="btn btn-outline btn-full" data-i18n="pr.p1.cta">Comenzar gratis</a>
       </div>
 
       <!-- Plan 2: Profesional -->
@@ -100,6 +100,7 @@
           <li data-i18n="pr.p2.f5">Reportes de sostenibilidad y gamificación</li>
           <li class="no" data-i18n="pr.p2.f6">Sensores IoT</li>
         </ul>
+        <a href="https://webapp-stockia.vercel.app/auth/sign-up?plan=profesional" class="btn btn-primary btn-full" data-i18n="pr.p2.cta">Elegir plan</a>
       </div>
 
       <!-- Plan 3: IoT Completo -->
@@ -119,12 +120,13 @@
           <li data-i18n="pr.p3.f5">Integración con servicio externo</li>
           <li data-i18n="pr.p3.f6">Soporte prioritario</li>
         </ul>
+        <a href="https://webapp-stockia.vercel.app/auth/sign-up?plan=iot-completo" class="btn btn-outline btn-full" data-i18n="pr.p3.cta">Elegir plan</a>
       </div>
-
     </div>
 
-    <p class="price-note" data-i18n="pr.note">Sin tarjeta de crédito · Cancela cuando quieras · Precios de ejemplo</p>
-  </div>
+<p class="price-note" data-i18n="pr.note">El plan Esencial no pide tarjeta · Paga los planes de pago con Stripe o PayPal desde la Web App · Cancela cuando quieras</p>
+<p class="price-note"><span data-i18n="pr.login.q">¿Ya tienes una cuenta?</span> <a href="https://webapp-stockia.vercel.app/auth/sign-in?redirect=/app/settings/plans" data-i18n="pr.login.link">Inicia sesión para cambiar de plan</a></p>
+</div>
 </section>
 
 <!-- ══════════ FAQ ══════════ -->
@@ -158,6 +160,7 @@
     <p class="section-sub white" data-i18n="cta.sub">Agenda una demo personalizada para tu restaurante. Sin tarjeta de crédito ni compromiso.</p>
     <div class="cta-banner-btns">
       <a href="about.html#contacto" class="btn btn-lg" style="background:white;color:var(--primary);border-color:white;" data-i18n="cta.btn1">Solicitar demo</a>
+      <a href="https://webapp-stockia.vercel.app/auth/sign-up" class="btn btn-accent btn-lg" data-i18n="cta.btn2">Crear cuenta gratis →</a>
     </div>
   </div>
 </section>
@@ -168,8 +171,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="navbar-logo" href="index.html">
-          <div class="logo-icon"><span>S</span></div>
-          <span class="logo-name brand-font">StockIA</span>
+<img src="assets/img/logo.png" alt="StockIA" class="logo-img" />
         </a>
         <p class="footer-tagline" data-i18n="ft.tagline">Inventario inteligente para restaurantes que no dejan nada al azar.</p>
       </div>
