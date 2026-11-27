@@ -9,6 +9,7 @@
   <meta name="author" content="DataBite Corp" />
   <meta name="copyright" content="Copyright DataBite Corp 2026" />
   <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
 </head>
 <body>
 
@@ -16,9 +17,7 @@
 <nav class="navbar">
   <div class="navbar-container">
     <a class="navbar-logo" href="index.html">
-      <!-- PENDIENTE: reemplazar por <img src="assets/img/logo.png" ...> cuando exista el logo final -->
-      <div class="logo-icon"><span>S</span></div>
-      <span class="logo-name brand-font">StockIA</span>
+      <img src="assets/img/logo.png" alt="StockIA" class="logo-img" />
     </a>
     <div class="navbar-links">
       <a href="index.html" data-i18n="nav.home">Inicio</a>
@@ -31,8 +30,8 @@
         <button class="lang-btn active" data-lang="es">ES</button>
         <button class="lang-btn" data-lang="en">EN</button>
       </div>
-      <a href="#" class="btn btn-primary btn-sm" data-i18n="nav.demo">Solicitar demo</a>
-    </div>
+<a href="https://webapp-stockia.vercel.app/auth/sign-in" class="btn btn-outline btn-sm" data-i18n="login.tag">Iniciar sesión</a>
+<a href="about.html#contacto" class="btn btn-primary btn-sm navbar-demo" data-i18n="nav.demo">Solicitar demo</a>    </div>
   </div>
 </nav>
 
@@ -424,19 +423,11 @@
       <h2 class="section-title" data-i18n="vid.title">Mira StockIA en acción</h2>
       <p class="section-sub" style="margin-inline:auto;" data-i18n="vid.sub">Descubre cómo StockIA transforma la gestión de inventario en tu restaurante.</p>
     </div>
-    <!--
-      PENDIENTE: cuando exista el video "About the Product", reemplazar el bloque
-      .video-placeholder de abajo por:
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="StockIA — About the Product"
-          frameborder="0" allowfullscreen></iframe>
-      </div>
-    -->
-    <div class="video-placeholder">
-      <div class="video-placeholder-icon">▶</div>
-      <div class="video-placeholder-title" data-i18n="vid.ph.title">Video demostrativo próximamente</div>
-      <div class="video-placeholder-text" data-i18n="vid.ph.text">Aquí se incrustará el video "About the Product" de StockIA una vez grabado y publicado.</div>
-    </div>
+
+  <div class="video-wrapper">
+  <iframe src="https://upcedupe-my.sharepoint.com/personal/u202414970_upc_edu_pe/_layouts/15/embed.aspx?UniqueId=53c110d2-8141-44a3-be97-b11b8b24077e&embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&referrer=StreamWebApp&referrerScenario=EmbedDialog.Create"
+    title="StockIA — About the Product" allowfullscreen></iframe>
+</div>
   </div>
 </section>
 
@@ -447,6 +438,7 @@
     <p class="section-sub white" data-i18n="cta.sub">Agenda una demo personalizada para tu restaurante. Sin tarjeta de crédito ni compromiso.</p>
     <div class="cta-banner-btns">
       <a href="about.html#contacto" class="btn btn-lg" style="background:white;color:var(--primary);border-color:white;" data-i18n="cta.btn1">Solicitar demo</a>
+      <a href="https://webapp-stockia.vercel.app/auth/sign-up" class="btn btn-accent btn-lg" data-i18n="cta.btn2">Crear cuenta gratis →</a>
     </div>
   </div>
 </section>
@@ -457,8 +449,7 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a class="navbar-logo" href="index.html">
-          <div class="logo-icon"><span>S</span></div>
-          <span class="logo-name brand-font">StockIA</span>
+        <img src="assets/img/logo.png" alt="" class="logo-img" />
         </a>
         <p class="footer-tagline" data-i18n="ft.tagline">Inventario inteligente para restaurantes que no dejan nada al azar.</p>
       </div>
@@ -480,8 +471,7 @@
         <div class="footer-links-list">
           <a href="#" data-i18n="ft.terms">Términos</a>
           <a href="#" data-i18n="ft.privacy">Privacidad</a>
-          <a href="#" data-i18n="ft.support">Soporte</a>
-        </div>
+<a href="about.html#contacto" data-i18n="ft.support">Soporte</a>        </div>
       </div>
     </div>
     <div class="footer-bottom">
